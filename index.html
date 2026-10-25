@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="認識小夏：喜歡閱讀、散步與烘焙，在日常裡收集小小的美好。">
+  <title>小夏｜把日子過成喜歡的樣子</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 56px 24px; background: #f2eadf; color: #514236; font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; line-height: 1.8; }
+    main { width: min(100%, 820px); }
+    .card { position: relative; overflow: hidden; padding: 56px; border: 1px solid #e5d8c7; border-radius: 28px; background: #fffaf2; box-shadow: 0 18px 60px #79604412; }
+    .eyebrow { margin: 0 0 28px; font-size: 12px; letter-spacing: .2em; color: #8b6b4d; }
+    .intro { display: flex; align-items: center; gap: 24px; }
+    .sun { flex: 0 0 84px; width: 84px; height: 84px; display: grid; place-items: center; border-radius: 50%; background: #f1dfbc; color: #9a693c; font-size: 44px; }
+    h1 { margin: 0; font-family: "Noto Serif TC", "Songti TC", serif; font-size: clamp(30px, 6vw, 42px); font-weight: 500; letter-spacing: .06em; }
+    .greeting { margin: 4px 0 0; color: #897664; font-size: 14px; }
+    .bio { max-width: 570px; margin: 26px 0 34px; color: #746353; }
+    h2 { margin: 0 0 16px; font-size: 15px; font-weight: 500; letter-spacing: .1em; }
+    ul { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; padding: 0; margin: 0; }
+    li { padding: 21px 18px; background: #f5eee3; border: 1px solid #ece1d1; border-radius: 16px; }
+    .number { display: block; color: #a17d58; font-size: 11px; letter-spacing: .12em; }
+    h3 { margin: 8px 0 6px; font-size: 17px; font-weight: 500; }
+    li p { margin: 0; color: #7c6c5c; font-size: 13px; }
+    .motto { margin: 34px 0 0; padding-top: 26px; border-top: 1px solid #e8ddce; }
+    .motto h2 { margin-bottom: 10px; color: #91775c; font-size: 12px; }
+    blockquote { margin: 0; font-family: "Noto Serif TC", "Songti TC", serif; font-size: clamp(18px, 3.5vw, 23px); letter-spacing: .04em; }
+    footer { margin-top: 20px; text-align: center; color: #806d59; font-size: 12px; letter-spacing: .1em; }
+    @media (max-width: 600px) {
+      body { padding: 24px 16px; }
+      .card { padding: 30px 24px; border-radius: 22px; }
+      .intro { gap: 16px; }
+      .sun { flex-basis: 64px; width: 64px; height: 64px; font-size: 34px; }
+      ul { grid-template-columns: 1fr; }
+      li { padding: 16px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article class="card" aria-labelledby="intro-title">
+      <p class="eyebrow">A LITTLE ABOUT ME · 關於我</p>
+      <header class="intro">
+        <span class="sun" aria-hidden="true">☀</span>
+        <div>
+          <h1 id="intro-title">你好，我是小夏。</h1>
+          <p class="greeting">一個喜歡慢慢生活、保持好奇的人。</p>
+        </div>
+      </header>
+      <p class="bio">我喜歡在平凡的日子裡，發現值得微笑的小事。一頁好書、一段有風的路，或是剛出爐的香氣，都能讓我重新充滿能量。</p>
+      <section aria-labelledby="favorites-title">
+        <h2 id="favorites-title">三件讓我開心的事</h2>
+        <ul>
+          <li><span class="number">01 / READ</span><h3>閱讀故事</h3><p>窩在窗邊翻開一本書，跟著文字去遠方旅行。</p></li>
+          <li><span class="number">02 / WANDER</span><h3>傍晚散步</h3><p>沿著街角慢慢走，收藏晚霞與日常的風景。</p></li>
+          <li><span class="number">03 / BAKE</span><h3>手作烘焙</h3><p>把麵粉和心意揉在一起，分享剛剛好的甜。</p></li>
+        </ul>
+      </section>
+      <section class="motto" aria-labelledby="motto-title">
+        <h2 id="motto-title">我的座右銘</h2>
+        <blockquote>「慢慢來，也能走到心裡想去的地方。」</blockquote>
+      </section>
+    </article>
+    <footer>小夏的生活小卡 · 把日子過成喜歡的樣子</footer>
+  </main>
+</body>
+</html>
